@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HangMan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./Assets/CSS/style.css" />
+    <link rel="javascript" type="text/javascript" src="./Assets/Javascript/game.js">
+</head>
+
+<body>
+    <header class="bg-info text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 border-bottom border-white">
+                    <h1 class="text-center font-weight-bold">
+                        HangMan Game
+                    </h1>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-dark mt-2">Back</button>
+                </div>
+            </div>
+    </header>
+    <div class="container border border-info rounded border-weight mt-2">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center border-bottom border-dark" id="topic">
+                    Please Choose a topic
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div id="first_container">
+                    <img class="choose_images" id="first" src="./Assets/Images/Titanic.jpg" alt="movie">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="container">
+                    <div class="row font-weight-bold" id="second_container">
+                        <img class="choose_images" id="second" src="./Assets/Images/Sport.jpg" alt="sport">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6" id="word_typed"></div>
+                        <div class="col-lg-6" id="already_typed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div id="third_container">
+                    <img class="choose_images" id="third" src="./Assets/Images/Earth.jpg" alt="Country">
+                </div>
+            </div>
+        </div>
+        <div class="row border-top border-dark mt-1 mr-1 ml-1">
+            <div class="col-lg-4">
+                <h3 class="text-center text-black" id="win">
+                    Moives
+                </h3>
+            </div>
+            <div class="col-lg-4">
+                <h3 class="text-center text-black" id="lose">
+                    Sports
+                </h3>
+            </div>
+            <div class="col-lg-4">
+                <h3 class="text-center text-black" id="score">
+                    Country
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container border border-info rounded border-weight mt-2">
+        <div class="row">
+            <h2 class="font-weight-bold font-bold">
+                <button type="button" class="btn btn-dark mt-2">Start</button>
+            </h2>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="Assets/Javascript/game.js"></script>
+</body>
+
+</html>
